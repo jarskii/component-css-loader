@@ -12,7 +12,6 @@ module.exports = function(source) {
   var componentExt = componentFileName.match(/\.(.+)$/)[1];
   var styleFileName = componentFileName.replace(componentExt, ext);
   var stylePath = this.resourcePath.replace(componentExt, ext);
-  console.log(query);
 
   try {
     var stats = fs.statSync(stylePath);
