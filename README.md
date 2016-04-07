@@ -34,6 +34,20 @@ Inline:
 ``` javascript
 var Button = require('component-css?ext=styl!./components/button/button.jsx');
 ```
+With css modules:
+
+``` javascript
+// ...
+  module: {
+    loaders: [
+      // ...
+      { test: /\.jsx$/, loader: 'component-css?ext=styl&cssModules=1!...' },
+      // ...
+    ]
+  },
+// ...
+```
+Required stylesheet is saved to variable `styles`
 
 Read more about [webpack loaders](http://webpack.github.io/docs/using-loaders.html).
 
